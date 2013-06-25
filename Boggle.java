@@ -9,7 +9,6 @@ public class Boggle
 	private static boolean[][] visitCheck;
 	private static BST dictionaryBST;
 	private static BST wordsFound;
-	//private static int wordCount;
 	private static ArrayList wordsFoundAL;
 	
 	public static void main(String[] args) throws Exception
