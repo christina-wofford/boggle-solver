@@ -34,15 +34,11 @@ public class Boggle
 				
 			while(dictionary.hasNext())
 				dictionaryBST.insert(dictionary.next());
-				
-			//printGrid();			
+					
 			startingGeneration();
 			Collections.sort(wordsFoundAL);
 			for(Object temp: wordsFoundAL)
 				System.out.println(temp);
-			//wordsFound.inOrderPrint();
-			//System.out.println("===========================");
-			//System.out.println("produced "+wordCount+" unique words");
 		}
 		
 	private static void printGrid()
@@ -78,7 +74,6 @@ public class Boggle
 				 if (dictionaryBST.contains(word) && word.length() > 2 && wordsFoundAL.contains(word) == false) 
 					{
 						wordsFoundAL.add(word);
-						//wordCount++;
 					}
 
 			
